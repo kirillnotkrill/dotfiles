@@ -1,0 +1,10 @@
+# .functions
+# borrowed from here and there
+# mostly useful once in a while
+
+# Create a new directory and cd into it
+mkcd() {
+    mkdir -p "$@" && cd "$@"
+}
+
+
