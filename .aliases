@@ -35,7 +35,7 @@ alias rmf='rm -rf'
 alias uptime='uptime -p'
 alias free='free -h'
 alias preview='fzf --height=50% --layout=reverse --preview="bat --color=always {}"'
-
+alias vim='nvim'
 # exa - better ls
 alias ls="exa -lbF --git"
 alias l="exa"
@@ -47,6 +47,6 @@ alias lS="exa -1"
 alias lt="exa --tree --level=2"
 
 # bat - better cat
+# for Debian/Ubuntu, see
+# https://github.com/sharkdp/bat#on-ubuntu-using-apt
 alias cat='bat'
-
-

@@ -6,7 +6,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 picom -b &
 
 # set monitor layout
-mons --primary DP-1 && mons -e top &
+xrandr --output DP1 --auto --output HDMI1 --auto --above DP1 &
 
 # set wallpaper
 feh --bg-scale --no-fehbg ~/.config/wallpaper.jpg &
@@ -14,8 +14,8 @@ feh --bg-scale --no-fehbg ~/.config/wallpaper.jpg &
 # launch polybar
 $HOME/.config/polybar/launch.sh
 
-bspc monitor HDMI-1 -d 4 5 6
-bspc monitor DP-1 -d 1 2 3
+bspc monitor HDMI1 -d 4 5 6
+bspc monitor DP1 -d 1 2 3
 
 bspc config border_width         2
 bspc config window_gap          12
